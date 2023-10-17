@@ -1,0 +1,33 @@
+/* pieds de page */
+.footer {
+  padding: 2.2rem 2.5rem;
+  color: #fff;
+  background-color: $bg-lightDark;
+}
+
+.footer h2 {
+  color: #fff;
+  font-size: clamp(1.8rem, 2vw, 2rem);
+  margin-bottom: 1.6rem;
+  font-family: $font-shrikhand;
+  font-weight: 400;
+}
+
+.footer__nav {
+  margin: 0.625rem 0;
+}
+
+.footer__nav li {
+  margin-bottom: 0.7rem;
+}
+
+.footer__nav li a {
+  font-size: clamp(1.6rem, 2vw, 1.9rem);
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer__nav li a i {
+  color: #fff;
+  margin-right: 1.1rem;
+}

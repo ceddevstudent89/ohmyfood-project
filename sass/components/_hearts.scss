@@ -1,0 +1,23 @@
+// Hearts
+
+.container__heart {
+  position: relative;
+  height: 2.4rem;
+  width: 2.4rem;
+  @extend %flex-center;
+  position: relative;
+
+  input[type="checkbox"] {
+    display: inline-block;
+    transform: scale(2.5);
+    opacity: 0;
+    z-index: 4;
+    cursor: pointer;
+  }
+
+  .fa-heart {
+    font-size: 2.4rem;
+    position: absolute;
+    transition: ease-in-out 1000ms;
+  }
+}

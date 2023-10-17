@@ -1,0 +1,83 @@
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+#arrow {
+  @include absolute-El(50%, 100%, 100%, 5%, -50%, -50%);
+  font-size: 2rem;
+  color: #000;
+}
+
+#picture {
+  height: 220px;
+
+  img {
+    @include image-fit("cover", "center", 100%, 120%);
+  }
+}
+
+#restaurant {
+  padding: 2rem 2rem;
+  border-radius: 4rem 4rem 0 0;
+  background-color: #f6f6f6;
+  #restaurant__name {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    h2 {
+      font-family: $font-shrikhand;
+      font-weight: lighter;
+    }
+  }
+}
+
+#restaurant .cards {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+
+  h3 {
+    font-size: 16px;
+    font-weight: lighter;
+    margin-bottom: 3px;
+  }
+
+  .underline {
+    height: 3px;
+    width: 45px;
+    background-color: #99e2d0;
+  }
+}
+
+#restaurant .cards .menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.order-menu {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+@media screen and (min-width: 1040px) {
+  #restaurant {
+    margin: auto;
+    width: 80%;
+    padding: 4rem 22rem;
+    border-radius: 40px 40px 0 0;
+    background-color: #f6f6f6;
+    #restaurant__name {
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      gap: 2rem;
+    }
+  }
+}

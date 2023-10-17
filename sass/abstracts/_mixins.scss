@@ -1,0 +1,52 @@
+// Mixins
+
+@mixin absolute-El($top, $right, $bottom, $left, $x, $y) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  transform: translate($x, $y);
+}
+
+// Pour les pseudo éléments
+@mixin pseudo-el($content: "", $display: block, $pos: absolute) {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+@mixin position($x, $y) {
+  position: absolute;
+  left: $x;
+  top: $y;
+}
+
+@mixin btn {
+  position: relative;
+  width: 100%;
+  background-color: $color-button-choice;
+  text-align: center;
+  border-radius: 2rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 2.8rem 3.8rem;
+  cursor: pointer;
+  @extend %flex-center;
+  gap: 1rem;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease-in-out;
+  &:hover {
+    background-color: rgba(147, 86, 220, 0.2);
+  }
+  &:hover > i {
+    color: $color-primary-violet;
+  }
+}
+
+@mixin image-fit($objet-fit, $position, $width, $height) {
+  object-fit: $objet-fit;
+  object-position: $position;
+  width: $width;
+  height: $height;
+}

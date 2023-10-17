@@ -1,0 +1,54 @@
+/* Typographie */
+
+html {
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+  /* base de 10px plus facile pour les valeurs en rem */
+  font-size: 10px;
+}
+
+body {
+  background-color: #f3f3f3;
+  font-family: Roboto, sans-serif;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #101010;
+  font-family: Shrikhand, sans-serif;
+  font-size: clamp(3rem, 2.5vw, 3.5rem);
+  font-weight: 400;
+}
+
+h2 {
+  font-size: clamp(2.4rem, 2vw, 2.7rem);
+  margin-bottom: 1.625rem;
+  font-weight: 700;
+}
+
+h3 {
+  color: #000;
+  font-size: clamp(1.8rem, 2vw, 2rem);
+  margin-bottom: 0.3rem;
+  font-weight: 700;
+}
+
+p {
+  color: #353535;
+  font-size: clamp(1.8rem, 2vw, 1.9rem);
+  font-weight: 300;
+}
+
+.main__location--text {
+  font-weight: 500;
+}
+
+.main__location .fa-location-dot {
+  font-size: 1.6rem;
+  color: #353535;
+}
+
+.fa-heart {
+  font-size: 1.57rem;
+}

@@ -1,0 +1,14 @@
+// Tête de page
+header {
+  background-color: $bg-primary-white;
+  height: 6.3rem;
+  position: relative;
+  width: 100%;
+  @extend %flex-center;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+  width: 100%;
+  text-align: center;
+}

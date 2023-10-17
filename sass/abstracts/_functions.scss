@@ -1,0 +1,10 @@
+// functions
+@mixin duplicateBtn($descendant...) {
+  @for $i from 0 to length($descendant) {
+    // nth veut dire numéro en anglais et non nth:child, rien à voir !!!
+    #{nth($descendant, $i + 1)} {
+      @include btn;
+      @debug "valeur de i: #{$i}";
+    }
+  }
+}

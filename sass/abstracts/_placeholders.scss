@@ -1,0 +1,32 @@
+// Comme il n'y a pas de paramètre on utilise des placeholders
+// Pourquoi ? évite le code de se répéter
+// (touts les selecteurs ensembles avec des virgules en CSS)
+
+%container-section {
+  background-color: #fff;
+  padding: 4.8rem 2rem 6.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+%object-fit {
+  border-top-right-radius: 1.25rem;
+  border-top-left-radius: 1.25rem;
+  object-fit: cover;
+  object-position: 40% 60%;
+  width: 100%;
+  height: 100%;
+}

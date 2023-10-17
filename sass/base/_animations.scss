@@ -1,0 +1,65 @@
+/* ANIMATION */
+
+// Titles animation
+@keyframes toRight {
+  from {
+    opacity: 0;
+    color: #9356dc;
+    transform: translateX(0px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(10px);
+  }
+}
+#title__animation {
+  animation: toRight 600ms ease-in-out;
+}
+
+// Pages animation
+@keyframes apparition {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#article {
+  animation: apparition 800ms ease-in;
+}
+
+// Hearts animation
+.container__heart {
+  input:checked ~ .heart-full {
+    opacity: 1;
+  }
+  input:not(:checked) ~ .heart-empty {
+    opacity: 1;
+  }
+  .fa-heart.heart-empty {
+    opacity: 0;
+  }
+  .fa-heart.heart-full {
+    opacity: 0;
+    color: $color-primary-violet;
+    background: linear-gradient(
+      170deg,
+      $color-primary-violet,
+      $color-secondary-pink
+    );
+    /*La propriété background-clip définit la façon dont
+    l'arrière-plan d'un élément (que ce soit l'image ou la couleur)
+    s'étend sous la boîte de bordure, la boîte de remplissage (padding)
+    ou la boîte de contenu.*/
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
