@@ -16,7 +16,7 @@ main {
   height: 220px;
 
   img {
-    @include image-fit("cover", "center", 100%, 120%);
+    @include image-fit(cover, center, 100%, 120%);
   }
 }
 
@@ -29,8 +29,9 @@ main {
     justify-content: space-between;
     align-items: baseline;
     h2 {
+      color: #101010;
       font-family: $font-shrikhand;
-      font-weight: lighter;
+      font-weight: 400;
     }
   }
 }
@@ -41,14 +42,14 @@ main {
   margin: 1rem 0;
 
   h3 {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: lighter;
     margin-bottom: 3px;
   }
 
   .underline {
     height: 3px;
-    width: 45px;
+    width: 40px;
     background-color: #99e2d0;
   }
 }
@@ -56,7 +57,7 @@ main {
 #restaurant .cards .menu {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  margin-top: 2rem;
   width: 100%;
   overflow: hidden;
 }
@@ -66,18 +67,6 @@ main {
   padding: 3rem 0;
 }
 
-@media screen and (min-width: 1040px) {
-  #restaurant {
-    margin: auto;
-    width: 80%;
-    padding: 4rem 22rem;
-    border-radius: 40px 40px 0 0;
-    background-color: #f6f6f6;
-    #restaurant__name {
-      display: flex;
-      justify-content: center;
-      align-items: baseline;
-      gap: 2rem;
-    }
-  }
+.order__btn {
+  padding: 1.3rem 4.875rem;
 }

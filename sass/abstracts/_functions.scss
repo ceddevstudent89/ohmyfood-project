@@ -4,7 +4,7 @@
     // nth veut dire numéro en anglais et non nth:child, rien à voir !!!
     #{nth($descendant, $i + 1)} {
       @include btn;
-      @debug "valeur de i: #{$i}";
+      @debug "valeur de i : #{$i}";
     }
   }
 }
