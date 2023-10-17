@@ -9,6 +9,13 @@
   transform: translate($x, $y);
 }
 
+@mixin absolute-Center($top, $left, $x, $y) {
+  position: absolute;
+  top: $top;
+  left: $left;
+  transform: translate(-$x, -$y);
+}
+
 // Pour les pseudo éléments
 @mixin pseudo-el($content: "", $display: block, $pos: absolute) {
   content: $content;

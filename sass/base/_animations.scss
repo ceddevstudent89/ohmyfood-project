@@ -1,5 +1,42 @@
 /* ANIMATION */
 
+// Animation page loading
+@keyframes flash {
+  0% {
+    color: #9356dc;
+    text-shadow: 0 0 7px #9356dc, 0 0 3px #fff, 0 0 3px #47f3ba;
+  }
+  90% {
+    color: #484848;
+    text-shadow: none;
+  }
+  100% {
+    color: #9356dc;
+    text-shadow: 0 0 7px #9356dc, 0 0 3px #fff, 0 0 3px #47f3ba;
+  }
+}
+
+@keyframes cook {
+  0% {
+    color: #484848;
+    text-shadow: 0 0 7px #9356dc, 0 0 3px #ff79da, 0 0 3px #fff;
+  }
+  90% {
+    color: #9356dc;
+    text-shadow: none;
+  }
+  100% {
+    color: #484848;
+    text-shadow: 0 0 7px #9356dc, 0 0 3px #ff79da, 0 0 3px #fff;
+  }
+}
+
+@keyframes stop-loading {
+  to {
+    transform: scale(0);
+  }
+}
+
 // Titles animation
 @keyframes toRight {
   from {
