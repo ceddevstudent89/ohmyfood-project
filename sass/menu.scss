@@ -24,7 +24,7 @@ main {
   padding: 2rem 2rem;
   border-radius: 4rem 4rem 0 0;
   background-color: #f6f6f6;
-  #restaurant__name {
+  &__name {
     display: flex;
     justify-content: space-between;
     align-items: baseline;

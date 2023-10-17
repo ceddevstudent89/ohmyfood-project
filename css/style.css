@@ -328,11 +328,9 @@ p {
     border-radius: 4rem 4rem 0 0;
     background-color: #f6f6f6;
   }
-  #restaurant #restaurant__name {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    gap: 2rem;
+  #restaurant__name {
+    margin: 0 auto;
+    width: 32%;
   }
 }
 .hero__btn {
@@ -541,12 +539,12 @@ main {
   border-radius: 4rem 4rem 0 0;
   background-color: #f6f6f6;
 }
-#restaurant #restaurant__name {
+#restaurant__name {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
-#restaurant #restaurant__name h2 {
+#restaurant__name h2 {
   color: #101010;
   font-family: "Shrikhand", sans-serif;
   font-weight: 400;

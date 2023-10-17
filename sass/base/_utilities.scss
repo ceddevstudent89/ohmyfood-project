@@ -43,11 +43,9 @@
     padding: 4rem 22rem;
     border-radius: 4rem 4rem 0 0;
     background-color: #f6f6f6;
-    #restaurant__name {
-      display: flex;
-      justify-content: center;
-      align-items: baseline;
-      gap: 2rem;
+    &__name {
+      margin: 0 auto;
+      width: 32%;
     }
   }
 }
