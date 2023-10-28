@@ -78,6 +78,10 @@ img {
   animation: toRight 600ms ease-in-out;
 }
 
+.article {
+  animation: apparition 800ms ease-in;
+}
+
 @keyframes apparition {
   0% {
     opacity: 0;
@@ -92,10 +96,6 @@ img {
     transform: translateY(0);
   }
 }
-#article {
-  animation: apparition 800ms ease-in;
-}
-
 .container__heart input:checked ~ .heart-full {
   opacity: 1;
 }
@@ -143,6 +143,16 @@ i {
   background-color: #eaeaea;
   gap: 1.7rem;
   height: 5rem;
+}
+.main__location input {
+  width: 140px;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  background: transparent;
+}
+.main__location input::placeholder {
+  color: #000;
 }
 
 .hero {
@@ -543,6 +553,10 @@ p {
   animation: toRight 600ms ease-in-out;
 }
 
+.article {
+  animation: apparition 800ms ease-in;
+}
+
 @keyframes apparition {
   0% {
     opacity: 0;
@@ -557,10 +571,6 @@ p {
     transform: translateY(0);
   }
 }
-#article {
-  animation: apparition 800ms ease-in;
-}
-
 .container__heart input:checked ~ .heart-full {
   opacity: 1;
 }

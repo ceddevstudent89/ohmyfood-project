@@ -30,6 +30,17 @@ img {
   @extend %flex-center;
   gap: 1.7rem;
   height: 5rem;
+
+  input {
+    width: 140px;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    background: transparent;
+    &::placeholder {
+      color: #000;
+    }
+  }
 }
 
 .hero {

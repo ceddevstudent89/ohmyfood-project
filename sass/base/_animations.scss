@@ -54,6 +54,10 @@
 }
 
 // Pages animation
+.article {
+  animation: apparition 800ms ease-in;
+}
+
 @keyframes apparition {
   0% {
     opacity: 0;
@@ -67,9 +71,6 @@
     opacity: 1;
     transform: translateY(0);
   }
-}
-#article {
-  animation: apparition 800ms ease-in;
 }
 
 // Hearts animation
