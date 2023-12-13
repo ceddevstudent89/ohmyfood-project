@@ -60,7 +60,7 @@ img {
 }
 @keyframes stop-loading {
   to {
-    transform: scale(0);
+    transform: scale(0) rotate(360deg);
   }
 }
 @keyframes toRight {
@@ -535,7 +535,7 @@ p {
 }
 @keyframes stop-loading {
   to {
-    transform: scale(0);
+    transform: scale(0) rotate(360deg);
   }
 }
 @keyframes toRight {
@@ -604,7 +604,7 @@ p {
   overflow: hidden;
   backface-visibility: hidden;
   animation: stop-loading 700ms 3s forwards;
-  transform-origin: right bottom;
+  transform-origin: center;
 }
 .loader .logo {
   border-radius: 50%;
