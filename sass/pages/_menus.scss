@@ -16,6 +16,8 @@ main {
 
   img {
     @include image-fit(cover, center, 100%, 120%);
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
   }
 }
 
