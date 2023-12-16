@@ -53,9 +53,18 @@
   animation: toRight 600ms ease-in-out;
 }
 
-// Pages animation
-.article {
+#entrees {
   animation: apparition 800ms ease-in;
+}
+
+#plats {
+  // décaler l'animation de 200ms
+  animation: apparition 800ms ease-in 200ms;
+}
+
+#desserts {
+  // plus 200ms
+  animation: apparition 800ms ease-in 400ms;
 }
 
 @keyframes apparition {

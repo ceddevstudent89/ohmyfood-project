@@ -78,8 +78,16 @@ img {
   animation: toRight 600ms ease-in-out;
 }
 
-.article {
+#entrees {
   animation: apparition 800ms ease-in;
+}
+
+#plats {
+  animation: apparition 800ms ease-in 200ms;
+}
+
+#desserts {
+  animation: apparition 800ms ease-in 400ms;
 }
 
 @keyframes apparition {
@@ -553,8 +561,16 @@ p {
   animation: toRight 600ms ease-in-out;
 }
 
-.article {
+#entrees {
   animation: apparition 800ms ease-in;
+}
+
+#plats {
+  animation: apparition 800ms ease-in 200ms;
+}
+
+#desserts {
+  animation: apparition 800ms ease-in 400ms;
 }
 
 @keyframes apparition {
