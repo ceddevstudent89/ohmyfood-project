@@ -259,11 +259,9 @@ i {
   position: relative;
   border-radius: 1.5rem;
 }
-
 .card__image {
   height: 70%;
 }
-
 .card__info {
   height: 30%;
   padding: 1.3rem;

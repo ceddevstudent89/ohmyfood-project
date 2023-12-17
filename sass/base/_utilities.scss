@@ -19,20 +19,23 @@
     grid-template-columns: 1fr 1fr;
     gap: 5rem 10rem;
   }
+
   .footer {
     padding: 30px 25px;
     display: flex;
     align-items: baseline;
     flex-direction: row-reverse;
     gap: 8rem;
-  }
-  .footer__nav {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-  }
-  .footer__nav li:nth-child(1) {
-    margin-right: -1.5rem;
+
+    &__nav {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    &__nav li:nth-child(1) {
+      margin-right: -1.5rem;
+    }
   }
 }
 

@@ -85,16 +85,16 @@ img {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   position: relative;
   border-radius: 1.5rem;
-}
 
-.card__image {
-  height: 70%;
-}
+  &__image {
+    height: 70%;
+  }
 
-.card__info {
-  height: 30%;
-  padding: 1.3rem;
-  @extend %flex-between;
+  &__info {
+    height: 30%;
+    padding: 1.3rem;
+    @extend %flex-between;
+  }
 }
 
 .card .new {
